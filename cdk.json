@@ -64,6 +64,8 @@
     "@aws-cdk/aws-eks:nodegroupNameAttribute": true,
     "@aws-cdk/aws-ec2:ebsDefaultGp3Volume": true,
     "@aws-cdk/aws-ecs:removeDefaultDeploymentAlarm": true,
-    "@aws-cdk/custom-resources:logApiResponseDataPropertyTrueDefault": false
+    "@aws-cdk/custom-resources:logApiResponseDataPropertyTrueDefault": false,
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "task": "text-classification"
   }
 }
