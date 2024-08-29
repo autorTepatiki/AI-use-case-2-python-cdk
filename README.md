@@ -1,7 +1,7 @@
 
-# Welcome to your CDK Python project!
+# README
 
-An AI project for CDK development with Python, using commercial libraries like HugginFace, aka HF.
+This is an AI project for AWS CDK v2 development with Python, using a wrapper library like HuggingFace, aka HF. It's based upon a previuos version, https://github.com/philschmid/cdk-samples/tree/master/sagemaker-serverless-huggingface-endpoint , for the obsolete AWS CDK v1. 
 
 The `cdk.json` file tells the CDK Toolkit how to execute the app.
 
