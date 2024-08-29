@@ -55,4 +55,6 @@ command.
  * `cdk diff`        compare deployed stack with current state
  * `cdk docs`        open CDK documentation
 
-Enjoy!
+Despite the example provided, it throws error during deployment, when retrieving HF image. See ERRORS.md
+
+:-(
