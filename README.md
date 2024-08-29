@@ -55,6 +55,29 @@ command.
  * `cdk diff`        compare deployed stack with current state
  * `cdk docs`        open CDK documentation
 
-Despite the example provided, it throws error during deployment, when retrieving HF image. See ERRORS.md
+Despite the example provided, maybe an error is thrown during the deployment, when retrieving HF image. See [ERRORS.md](./ERRORS.md), and some help in https://stackoverflow.com/questions/64039980/does-not-have-batchgetimage-permission-while-deploying-model-in-sagemaker .
 
 :-(
+
+Anyway, it succeded to deploy after a couple of attemps - issue related to the supposed delay with the role creation and the `GetBatchImage` permission.
+
+:-)
+
+TEST
+
+```
+$ curl --request POST \
+  --url {YOUR-URL} \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"inputs": "Hugging Face, the winner of VentureBeat’s Innovation in Natural Language Process/Understanding Award for 2021, is looking to level the playing field. The team, launched by Clément Delangue and Julien Chaumond in 2016, was recognized for its work in democratizing NLP, the global market value for which is expected to hit $35.1 billion by 2026. This week, Google’s former head of Ethical AI Margaret Mitchell joined the team."
+}'
+```
+
+```
+[{"label":"POSITIVE","score":0.9970797896385193}]
+```
+
+
+
+
